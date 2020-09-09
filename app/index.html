@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MartPlace | Homepage</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -67,8 +69,8 @@
                         </ul>
                     </nav>
                     <form class="header__search">
-                        <input class="header__search-input" type="search" name="search header"
-                            placeholder="Search product here...">
+                        <label class="label"><input class="header__search-input" type="search" name="search header"
+                                placeholder="Search product here..."></label>
                         <button type="submit" class="lnr lnr-magnifier"></button>
                     </form>
                 </div>
@@ -76,6 +78,41 @@
         </div>
 
     </header>
+    <main class="main">
+        <section class="digital-product">
+            <div class="digital-product__subtitle">
+                Create Your Own
+            </div>
+            <div class="digital-product__title">
+                Digital Product Marketplace
+            </div>
+            <div class="digital-product__text">MartPlace is the most powerful, & customizable template for Easy Digital
+                Downloads Products</div>
+            <div class="digital-product__btns">
+                <button type="button" class="digital-product__btn btn btn--white">View All Products</button>
+                <button type="button" class="digital-product__btn btn btn--transparent">Popular Products</button>
+            </div>
+            <form class="search container">
+                <label class="search-input">
+                    <input class="search__input" type="search" name="search" placeholder="Search your products...">
+                </label>
+                <select name="search list" class="search__list">
+                    <option selected class="search__item">All Categories</option>
+                    <option class="search__item">Plugins</option>
+                    <option class="search__item">WordPress</option>
+                    <option class="search__item">Site Template</option>
+                    <option class="search__item">PSD Template</option>
+                    <option class="search__item">Joomla</option>
+                    <option class="search__item">User Interface</option>
+                    <option class="search__item">Landing Page</option>
+                    <option class="search__item">Software</option>
+                </select>
+                <button class="search__btn" type="submit">Search Now</button>
+            </form>
+        </section>
+
+        <section style="height: 400px; background-color: black;"></section>
+    </main>
 
 
 
