@@ -407,7 +407,6 @@
         flex-direction: column;
         max-width: 361px;
         text-align: center;
-        padding: 0 30px;
         transition: all 0.7s;
 
         &:hover {
@@ -419,7 +418,7 @@
 
     &__wrapper-img {
         width: 100%;
-        height: 200px;
+        height: 195px;
         display: flex;
         text-align: center;
         align-items: center;
@@ -435,7 +434,7 @@
     &__item-title {
         font-size: 24px;
         color: #000000;
-        margin-bottom: 34px;
+        margin-bottom: 24px;
     }
 
     &__item-text {
@@ -447,3 +446,208 @@
 
 
 // end advantages
+
+// star weekly-products
+
+.weekly-products {
+    padding: 120px 0;
+    background-color: #eff1f5;
+
+    &__inner {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__top {
+        padding: 32px 30px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .weekly-products__top-title {
+            font-size: 30px;
+            line-height: 28px;
+            color: #000000;
+        }
+
+        .weekly-products__top-btns {
+            width: 110px;
+            height: 45px;
+            background-color: #7347c1;
+            border-radius: 22.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .swiper__button-prev,
+    .swiper__button-next {
+        position: static;
+        font-size: 14px;
+        line-height: 7px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        margin: 0 10px;
+    }
+
+    .swiper-container {
+        width: 1140px;
+        height: 450px;
+
+        .swiper-slide {
+            display: flex;
+
+            .slide__img {
+                flex: 0 1 555px;
+            }
+
+            .card {
+                padding: 50px 50px 24px 50px;
+                background-color: #fff;
+
+                &__title {
+                    display: inline-block;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #000000;
+                    margin-bottom: 15px;
+                    text-decoration: none;
+                }
+
+                &__info {
+                    display: flex;
+                    margin-bottom: 41px;
+
+                }
+
+                &__img {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 14px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    background-position: center;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                &__name-user {
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: #000000;
+                    margin-right: 21px;
+                }
+
+                &__category {
+                    font-size: 15px;
+                    line-height: 30px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    color: #7347c1;
+                    padding-left: 25px;
+                    position: relative;
+                    // display: flex;
+                    // align-items: center;
+
+                    &::before {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-image: url(../images/wordpress.svg);
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                    }
+                }
+
+                &__text {
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: #555555;
+                    margin-bottom: 40px;
+                }
+
+                &__tags {
+                    display: flex;
+                    margin-bottom: 50px;
+                }
+
+                &__tag {
+                    background-color: #f1f3f6;
+                    border-radius: 24px;
+                    padding: 3px 14px;
+                    text-align: center;
+                    font-size: 15px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: #868c96;
+                    margin: 0 4px;
+                }
+
+                &__bottom {
+                    display: flex;
+                }
+
+                &__price {
+                    margin-right: 20px;
+                    padding: 9px 19px;
+                    background-color: #0674ec;
+                    border-radius: 16px;
+                    text-align: center;
+                    font-size: 15px;
+                    line-height: 15px;
+                    font-weight: 500;
+                    color: #ffffff;
+                }
+
+                &__like {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+
+                    .card__heart {
+                        font-size: 15px;
+                        line-height: 30px;
+                        color: #7347c1;
+                        margin-right: 5px;
+                    }
+
+                    .card__like-quantity {
+                        color: #555555;
+                    }
+                }
+
+                &__cart {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    color: #0674ec;
+
+                    .card__cart-icon {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+// end weekly-products
