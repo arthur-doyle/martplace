@@ -39,7 +39,7 @@
     }
 
     .header__notice-list {
-        margin: 0 50px;
+        margin: 0 48px;
     }
 
     .header__notice {
@@ -66,9 +66,9 @@
                 background-color: red;
                 position: absolute;
                 border-radius: 50%;
-                right: -16px;
-                top: -16px;
-                padding: 5px 6px;
+                right: -18px;
+                top: -15px;
+                padding: 6px 7px;
                 font-size: 14px;
                 line-height: 11px;
                 font-weight: 500;
@@ -109,6 +109,7 @@
     .header__user {
         display: flex;
         align-items: center;
+        padding-right: 5px;
 
         .header__avatar {
             margin-right: 22px;
@@ -134,7 +135,7 @@
         .header__user-name {
             font-size: 16px;
             line-height: 22px;
-            font-weight: 700;
+            font-weight: 500;
             color: #333333;
         }
 
@@ -170,7 +171,7 @@
         }
 
         &+.menu__item {
-            margin-left: 23px;
+            margin-left: 27px;
         }
     }
 
@@ -181,7 +182,7 @@
         display: inline-block;
         font-size: 15px;
         line-height: 22px;
-        font-weight: 700;
+        font-weight: 500;
         text-transform: uppercase;
         color: #333333;
     }
@@ -212,7 +213,7 @@
             border-radius: 23px;
             right: 0;
             border: none;
-            padding: 15px 27px;
+            padding: 15px 29px;
             text-align: center;
             font-size: 15px;
             color: #ffffff;
@@ -238,9 +239,8 @@
 
 .digital-product {
     position: relative;
-    padding-top: 184px;
+    padding-top: 172px;
     min-height: 726px;
-    // background-color: #441c7cc5;
     background-image: linear-gradient(-90.0deg, #0030de 0%, #2e5afb 100%);
     text-align: center;
 
@@ -249,11 +249,11 @@
         font-size: 60px;
         line-height: 70px;
         color: #f3f3f8;
-        margin-bottom: 38px;
+        margin-bottom: 33px;
     }
 
     &__subtitle {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 60px;
         line-height: 70px;
         color: #f3f3f8;
@@ -264,20 +264,20 @@
         line-height: 22px;
         font-weight: 500;
         color: #f3f3f8;
-        margin-bottom: 68px;
+        margin-bottom: 70px;
     }
 
 }
 
 .digital-product__btns {
-    margin-bottom: 140px;
+    margin-bottom: 100px;
 }
 
 .btn {
     text-align: center;
     border: none;
     background-color: transparent;
-    padding: 12px 31px;
+    padding: 14px 32px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -296,6 +296,7 @@
 }
 
 .btn--transparent {
+    margin-right: 21px;
     color: #fff;
     border: 1px solid #fff;
     transition: box-shadow 0.7s;
@@ -360,7 +361,7 @@
     &__list {
         width: 195px;
         height: 55px;
-        padding-left: 19px;
+        padding-left: 14px;
         border: 1px solid #dcdcdc;
         border-left: none;
         font-size: 16px;
@@ -369,7 +370,8 @@
     }
 
     &__btn {
-        margin-left: 30px;
+        transform: translateX(-8px);
+        margin-left: 34px;
         height: 55px;
         background-color: #0674ec;
         border-radius: 4px;
@@ -383,3 +385,65 @@
 }
 
 // end digital-product
+
+// start advanteges 
+
+.advantages {
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 186px;
+    padding-bottom: 121px;
+
+
+    &__items {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 361px;
+        text-align: center;
+        padding: 0 30px;
+        transition: all 0.7s;
+
+        &:hover {
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
+            border-radius: 4px;
+            transform: scale(1.2);
+        }
+    }
+
+    &__wrapper-img {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item-img {
+        width: 112px;
+        height: 113px;
+        text-align: center;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 34px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #555555;
+    }
+}
+
+
+// end advantages
