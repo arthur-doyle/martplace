@@ -28,30 +28,3 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-.ratings {
-    display: inline-flex;
-    flex-direction: row-reverse;
-
-    &__item {
-        font-size: 17px;
-        line-height: 30px;
-
-
-    }
-
-
-}
-
-.ratings__item:hover,
-.ratings__item~.ratings__item {
-    color: #ccc;
-}
-
-.ratings[data-total-value="1"] .ratings__item:nth-child(n + 5),
-.ratings[data-total-value="2"] .ratings__item:nth-child(n + 4),
-.ratings[data-total-value="3"] .ratings__item:nth-child(n + 3),
-.ratings[data-total-value="4"] .ratings__item:nth-child(n + 2),
-.ratings[data-total-value="5"] .ratings__item:nth-child(n + 1) {
-    color: orange;
-}

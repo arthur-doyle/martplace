@@ -98,8 +98,8 @@
                 <label class="search-input">
                     <input class="search__input" type="search" name="search" placeholder="Search your products...">
                 </label>
-                <label>
-                    <select name="search list" class="search__list lnr lnr-chevron-down">
+                <label class="lnr lnr-chevron-down">
+                    <select name="search list" class="search__list">
                         <option selected class="search__item">All Categories</option>
                         <option class="search__item">Plugins</option>
                         <option class="search__item">WordPress</option>
@@ -203,24 +203,13 @@
                                             <div class="card__cart-icon lnr lnr-cart"></div>
                                             <div class="card__cart-quantity">634</div>
                                         </div>
-                                        <div class="card__ratings ratings" data-total-value="0">
-                                            <div class="ratings__item" data-item-value="5"><i
-                                                    class="material-icons">star_rate</i></div>
-                                            <div class="ratings__item" data-item-value="4"><i
-                                                    class="material-icons">star_rate</i></div>
-                                            <div class="ratings__item" data-item-value="3"><i
-                                                    class="material-icons">star_rate</i></div>
-                                            <div class="ratings__item" data-item-value="2"><i
-                                                    class="material-icons">star_rate</i></div>
-                                            <div class="ratings__item" data-item-value="1"><i
-                                                    class="material-icons">star_rate</i></div>
+                                        <div class="card__ratings ratings">
+                                            <div id="rateYo"></div>
                                         </div>
                                     </div>
                                 </article>
                             </div>
                         </div>
-
-                        <!-- If we need navigation buttons -->
 
                     </div>
                 </div>
@@ -231,7 +220,7 @@
 
 
 
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
